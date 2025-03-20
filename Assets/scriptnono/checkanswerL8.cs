@@ -1,0 +1,75 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CheckanswerL8 : MonoBehaviour
+{
+    public SpriteRenderer[] sr;
+    public Sprite filled;
+
+    public GameObject winPanel;
+
+    void Start()
+    {
+        if (winPanel != null)
+        {
+            winPanel.SetActive(false);
+        }
+    }
+
+    void Update()
+    {
+        if (sr[0].sprite != filled &&
+            sr[1].sprite != filled &&
+            sr[2].sprite != filled &&
+            sr[3].sprite != filled &&
+            sr[4].sprite != filled &&
+            sr[5].sprite == filled &&
+            sr[6].sprite == filled &&
+            sr[7].sprite == filled &&
+            sr[8].sprite == filled &&
+            sr[9].sprite == filled &&
+            sr[10].sprite != filled &&
+            sr[11].sprite == filled &&
+            sr[12].sprite == filled &&
+            sr[13].sprite == filled &&
+            sr[14].sprite != filled &&
+            sr[15].sprite != filled &&
+            sr[16].sprite != filled &&
+            sr[17].sprite == filled &&
+            sr[18].sprite != filled &&
+            sr[19].sprite != filled &&
+            sr[20].sprite != filled &&
+            sr[21].sprite != filled &&
+            sr[22].sprite == filled &&
+            sr[23].sprite != filled &&
+            sr[24].sprite != filled &&
+            sr[25].sprite != filled &&
+            sr[26].sprite != filled &&
+            sr[27].sprite == filled &&
+            sr[28].sprite != filled &&
+            sr[29].sprite != filled &&
+            sr[30].sprite != filled &&
+            sr[31].sprite == filled &&
+            sr[32].sprite == filled &&
+            sr[33].sprite == filled &&
+            sr[34].sprite != filled &&
+            sr[35].sprite == filled &&
+            sr[36].sprite == filled &&
+            sr[37].sprite == filled &&
+            sr[38].sprite == filled &&
+            sr[39].sprite == filled &&
+            sr[40].sprite != filled &&
+            sr[41].sprite != filled &&
+            sr[42].sprite != filled &&
+            sr[43].sprite != filled &&
+            sr[44].sprite != filled)
+        {
+
+            if (winPanel != null)
+            {
+                winPanel.SetActive(true);
+            }
+        }
+    }
+}
